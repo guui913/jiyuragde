@@ -1,0 +1,16 @@
+torch>=2.1.0
+transformers>=4.40.0
+sentence-transformers>=2.7.0
+chromadb>=0.5.0
+langchain>=0.2.0
+jieba>=0.42.1
+rank-bm25>=0.2.2
+gradio>=4.0.0
+sacrebleu>=2.4.0
+rouge-score>=0.1.2
+numpy>=1.24.0
+pandas>=2.0.0
+peft>=0.10.0
+accelerate>=0.28.0
+bitsandbytes>=0.43.0
+datasets>=2.18.0

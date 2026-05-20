@@ -1,0 +1,118 @@
+2026-05-20 08:52:17 [INFO] src.pipeline.rag_pipeline: 使用基座模型
+2026-05-20 08:52:17 [WARNING] src.generation.base_model: 未检测到GPU，使用CPU推理（速度较慢）
+2026-05-20 08:52:17 [INFO] src.generation.base_model: 正在加载基座模型: deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+2026-05-20 08:54:58 [INFO] src.pipeline.rag_pipeline: 使用 Ollama 本地模型
+2026-05-20 08:54:58 [INFO] src.pipeline.rag_pipeline: RAG Pipeline 初始化完成 (model_type=ollama)
+2026-05-20 08:54:59 [INFO] httpx: HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-05-20 08:56:16 [INFO] src.pipeline.rag_pipeline: 使用 Ollama 本地模型
+2026-05-20 08:56:16 [INFO] src.pipeline.rag_pipeline: RAG Pipeline 初始化完成 (model_type=ollama)
+2026-05-20 08:56:17 [INFO] httpx: HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-05-20 08:58:18 [INFO] src.pipeline.rag_pipeline: 使用 Ollama 本地模型
+2026-05-20 08:58:18 [INFO] src.pipeline.rag_pipeline: RAG Pipeline 初始化完成 (model_type=ollama)
+2026-05-20 08:58:18 [INFO] src.ui.gradio_app: 正在启动 Gradio 界面...
+2026-05-20 08:58:22 [INFO] httpx: HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-05-20 09:06:50 [INFO] src.pipeline.rag_pipeline: 使用 Ollama 本地模型
+2026-05-20 09:06:50 [INFO] src.pipeline.rag_pipeline: RAG Pipeline 初始化完成 (model_type=ollama)
+2026-05-20 09:06:50 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
+2026-05-20 09:06:50 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base
+2026-05-20 09:06:50 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
+2026-05-20 09:06:50 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base
+2026-05-20 09:06:51 [INFO] src.ui.gradio_app: 正在启动 Gradio 界面...
+2026-05-20 09:06:52 [INFO] httpx: HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-05-20 09:15:37 [INFO] src.pipeline.rag_pipeline: 使用 Ollama 本地模型
+2026-05-20 09:15:37 [INFO] src.pipeline.rag_pipeline: RAG Pipeline 初始化完成 (model_type=ollama)
+2026-05-20 09:15:37 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
+2026-05-20 09:15:37 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base
+2026-05-20 09:15:37 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
+2026-05-20 09:15:37 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base
+2026-05-20 09:15:38 [INFO] src.ui.gradio_app: 正在启动 Gradio 界面...
+2026-05-20 09:15:39 [INFO] httpx: HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-05-20 09:15:40 [INFO] httpx: HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-05-20 09:15:42 [INFO] httpx: HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2026-05-20 09:19:49 [INFO] src.pipeline.rag_pipeline: RAG问答开始，query=劳动法中加班费怎么计算？...
+2026-05-20 09:19:49 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base
+2026-05-20 09:19:49 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
+2026-05-20 09:19:49 [INFO] src.retrieval.keyword_search: 开始关键词检索，query=劳动法中加班费怎么计算？..., top_k=10
+2026-05-20 09:19:49 [INFO] src.retrieval.keyword_search: 构建 BM25 索引，共 31 篇文档
+2026-05-20 09:19:49 [DEBUG] jieba: Building prefix dict from the default dictionary ...
+2026-05-20 09:19:49 [DEBUG] jieba: Loading model from cache C:\Users\lenovo\AppData\Local\Temp\jieba.cache
+2026-05-20 09:19:50 [DEBUG] jieba: Loading model cost 0.878 seconds.
+2026-05-20 09:19:50 [DEBUG] jieba: Prefix dict has been built successfully.
+2026-05-20 09:19:50 [INFO] src.retrieval.keyword_search: 关键词检索完成，返回 10 条结果
+2026-05-20 09:19:50 [INFO] src.retrieval.vector_search: 开始向量检索，query=劳动法中加班费怎么计算？..., top_k=10
+2026-05-20 09:19:50 [INFO] src.knowledge_base.embedding: 正在加载嵌入模型: BAAI/bge-small-zh-v1.5
+2026-05-20 09:19:50 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: cpu
+2026-05-20 09:19:50 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: BAAI/bge-small-zh-v1.5
+2026-05-20 09:20:00 [INFO] src.generation.api_model: DeepSeek API 已配置，模型: deepseek-chat
+2026-05-20 09:22:53 [WARNING] huggingface_hub.utils._http: '[WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。' thrown while requesting HEAD https://huggingface.co/BAAI/bge-small-zh-v1.5/resolve/main/adapter_config.json
+2026-05-20 09:22:53 [WARNING] huggingface_hub.utils._http: Retrying in 1s [Retry 1/5].
+2026-05-20 09:23:36 [WARNING] huggingface_hub.utils._http: '[WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。' thrown while requesting HEAD https://huggingface.co/BAAI/bge-small-zh-v1.5/resolve/main/adapter_config.json
+2026-05-20 09:23:36 [WARNING] huggingface_hub.utils._http: Retrying in 2s [Retry 2/5].
+2026-05-20 09:24:20 [WARNING] huggingface_hub.utils._http: '[WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。' thrown while requesting HEAD https://huggingface.co/BAAI/bge-small-zh-v1.5/resolve/main/adapter_config.json
+2026-05-20 09:24:20 [WARNING] huggingface_hub.utils._http: Retrying in 4s [Retry 3/5].
+2026-05-20 09:26:14 [INFO] src.pipeline.rag_pipeline: 使用 Ollama 本地模型
+2026-05-20 09:26:14 [INFO] src.pipeline.rag_pipeline: RAG Pipeline 初始化完成 (model_type=ollama)
+2026-05-20 09:26:14 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
+2026-05-20 09:26:14 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base
+2026-05-20 09:26:14 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
+2026-05-20 09:26:14 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base
+2026-05-20 09:26:15 [INFO] src.ui.gradio_app: 正在启动 Gradio 界面...
+2026-05-20 09:26:16 [INFO] httpx: HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-05-20 09:26:17 [INFO] httpx: HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-05-20 09:26:19 [INFO] httpx: HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2026-05-20 09:27:02 [INFO] src.pipeline.rag_pipeline: RAG问答开始，query=劳动法中加班费怎么计算？...
+2026-05-20 09:27:02 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base
+2026-05-20 09:27:02 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
+2026-05-20 09:27:02 [INFO] src.retrieval.keyword_search: 开始关键词检索，query=劳动法中加班费怎么计算？..., top_k=10
+2026-05-20 09:27:02 [INFO] src.retrieval.keyword_search: 构建 BM25 索引，共 31 篇文档
+2026-05-20 09:27:02 [DEBUG] jieba: Building prefix dict from the default dictionary ...
+2026-05-20 09:27:02 [DEBUG] jieba: Loading model from cache C:\Users\lenovo\AppData\Local\Temp\jieba.cache
+2026-05-20 09:27:03 [DEBUG] jieba: Loading model cost 0.374 seconds.
+2026-05-20 09:27:03 [DEBUG] jieba: Prefix dict has been built successfully.
+2026-05-20 09:27:03 [INFO] src.retrieval.keyword_search: 关键词检索完成，返回 10 条结果
+2026-05-20 09:27:03 [INFO] src.retrieval.vector_search: 开始向量检索，query=劳动法中加班费怎么计算？..., top_k=10
+2026-05-20 09:27:03 [INFO] src.knowledge_base.embedding: 正在加载嵌入模型: BAAI/bge-small-zh-v1.5
+2026-05-20 09:27:03 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: cpu
+2026-05-20 09:27:03 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: BAAI/bge-small-zh-v1.5
+2026-05-20 09:27:03 [INFO] src.knowledge_base.embedding: 嵌入模型加载完成
+2026-05-20 09:27:03 [INFO] src.retrieval.vector_search: 向量检索完成，返回 10 条结果
+2026-05-20 09:27:03 [INFO] src.retrieval.hybrid_search: 开始RRF混合检索融合，query=劳动法中加班费怎么计算？...
+2026-05-20 09:27:03 [INFO] src.retrieval.hybrid_search: RRF融合完成，最终返回 3 条结果
+2026-05-20 09:27:03 [INFO] src.generation.ollama_model: 正在调用 Ollama (llama3.2:latest)...
+2026-05-20 09:27:15 [INFO] src.generation.ollama_model: Ollama 调用成功
+2026-05-20 09:27:15 [INFO] src.pipeline.rag_pipeline: RAG问答完成，answer=根据《中华人民共和国劳动法》相关条款，劳动者加班费的计算方式如下：
+
+按照国家有关规定，安排加班的用人单位应当按照国家有关规定向劳动者支付加班费。具体来说，按以...
+2026-05-20 09:27:15 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
+2026-05-20 09:27:15 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base
+2026-05-20 09:27:27 [INFO] src.pipeline.rag_pipeline: RAG问答开始，query=劳动法中加班费怎么计算？...
+2026-05-20 09:27:27 [INFO] src.retrieval.keyword_search: 开始关键词检索，query=劳动法中加班费怎么计算？..., top_k=10
+2026-05-20 09:27:27 [INFO] src.retrieval.keyword_search: 关键词检索完成，返回 10 条结果
+2026-05-20 09:27:27 [INFO] src.retrieval.vector_search: 开始向量检索，query=劳动法中加班费怎么计算？..., top_k=10
+2026-05-20 09:27:27 [INFO] src.retrieval.vector_search: 向量检索完成，返回 10 条结果
+2026-05-20 09:27:27 [INFO] src.retrieval.hybrid_search: 开始RRF混合检索融合，query=劳动法中加班费怎么计算？...
+2026-05-20 09:27:27 [INFO] src.retrieval.hybrid_search: RRF融合完成，最终返回 3 条结果
+2026-05-20 09:27:27 [INFO] src.generation.ollama_model: 正在调用 Ollama (llama3.2:latest)...
+2026-05-20 09:27:32 [INFO] src.generation.ollama_model: Ollama 调用成功
+2026-05-20 09:27:32 [INFO] src.pipeline.rag_pipeline: RAG问答完成，answer=根据《劳动法》相关规定，劳动者加班费的计算标准如下：
+
+* 安排劳动者延长工作时间的，用人单位应当支付不低于工资的百分之一百五十的工资报酬。
+* 休息日安排劳动...
+2026-05-20 09:27:32 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
+2026-05-20 09:27:32 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base
+2026-05-20 09:27:39 [INFO] src.generation.api_model: DeepSeek API 已配置，模型: deepseek-chat
+2026-05-20 09:27:44 [INFO] src.pipeline.rag_pipeline: RAG问答开始，query=试用期的期限最长为多久？...
+2026-05-20 09:27:44 [INFO] src.retrieval.keyword_search: 开始关键词检索，query=试用期的期限最长为多久？..., top_k=10
+2026-05-20 09:27:44 [INFO] src.retrieval.keyword_search: 关键词检索完成，返回 10 条结果
+2026-05-20 09:27:44 [INFO] src.retrieval.vector_search: 开始向量检索，query=试用期的期限最长为多久？..., top_k=10
+2026-05-20 09:27:44 [INFO] src.retrieval.vector_search: 向量检索完成，返回 10 条结果
+2026-05-20 09:27:44 [INFO] src.retrieval.hybrid_search: 开始RRF混合检索融合，query=试用期的期限最长为多久？...
+2026-05-20 09:27:44 [INFO] src.retrieval.hybrid_search: RRF融合完成，最终返回 3 条结果
+2026-05-20 09:27:44 [INFO] src.generation.api_model: 正在调用 DeepSeek API...
+2026-05-20 09:27:46 [INFO] src.generation.api_model: DeepSeek API 调用成功
+2026-05-20 09:27:46 [INFO] src.pipeline.rag_pipeline: RAG问答完成，answer=根据参考资料，试用期的最长期限规定如下：
+
+- 劳动合同期限三年以上固定期限和无固定期限的劳动合同，试用期不得超过**六个月**。
+- 以完成一定工作任务为期限...
+2026-05-20 09:27:46 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
+2026-05-20 09:27:46 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base

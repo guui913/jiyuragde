@@ -1,0 +1,23 @@
+[
+  {
+    "conversations": [
+      {"role": "user", "content": "劳动法中加班费怎么算？"},
+      {"role": "assistant", "content": "根据《劳动法》第四十四条：(1)延长工作时间，支付不低于工资150%的报酬；(2)休息日工作不补休，200%的报酬；(3)法定休假日工作，300%的报酬。"}
+    ],
+    "source": "self_constructed"
+  },
+  {
+    "conversations": [
+      {"role": "user", "content": "试用期最长多久？"},
+      {"role": "assistant", "content": "根据《劳动合同法》第十九条，劳动合同期限三个月以上不满一年的，试用期不得超过一个月；一年以上不满三年的，试用期不得超过二个月；三年以上固定期限和无固定期限的劳动合同，试用期不得超过六个月。"}
+    ],
+    "source": "self_constructed"
+  },
+  {
+    "conversations": [
+      {"role": "user", "content": "被辞退能拿多少补偿？"},
+      {"role": "assistant", "content": "根据《劳动合同法》第四十七条，经济补偿按劳动者在本单位工作的年限计算：每满一年支付一个月工资；六个月以上不满一年的按一年计算；不满六个月的支付半个月工资。工资基数按离职前十二个月平均工资计算。"}
+    ],
+    "source": "self_constructed"
+  }
+]
