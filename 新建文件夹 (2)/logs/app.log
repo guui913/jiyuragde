@@ -116,3 +116,53 @@
 - 以完成一定工作任务为期限...
 2026-05-20 09:27:46 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
 2026-05-20 09:27:46 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base
+2026-05-21 14:44:08 [INFO] src.pipeline.rag_pipeline: 使用 Ollama 本地模型
+2026-05-21 14:44:08 [INFO] src.pipeline.rag_pipeline: RAG Pipeline 初始化完成 (model_type=ollama)
+2026-05-21 14:44:08 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
+2026-05-21 14:44:08 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base
+2026-05-21 14:44:08 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
+2026-05-21 14:44:08 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base
+2026-05-21 14:44:08 [INFO] src.ui.gradio_app: 正在启动 Gradio 界面...
+2026-05-21 14:44:09 [INFO] httpx: HTTP Request: GET http://localhost:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2026-05-21 14:44:09 [INFO] httpx: HTTP Request: HEAD http://localhost:7860/ "HTTP/1.1 200 OK"
+2026-05-21 14:44:10 [INFO] httpx: HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2026-05-21 14:52:35 [INFO] src.pipeline.rag_pipeline: RAG问答开始，query=我给盲人一把手枪告诉他这是吹风机这犯了什么法
+...
+2026-05-21 14:52:35 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base
+2026-05-21 14:52:35 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
+2026-05-21 14:52:35 [INFO] src.retrieval.keyword_search: 开始关键词检索，query=我给盲人一把手枪告诉他这是吹风机这犯了什么法
+..., top_k=10
+2026-05-21 14:52:35 [INFO] src.retrieval.keyword_search: 构建 BM25 索引，共 31 篇文档
+2026-05-21 14:52:35 [DEBUG] jieba: Building prefix dict from the default dictionary ...
+2026-05-21 14:52:35 [DEBUG] jieba: Loading model from cache C:\Users\lenovo\AppData\Local\Temp\jieba.cache
+2026-05-21 14:52:36 [DEBUG] jieba: Loading model cost 1.165 seconds.
+2026-05-21 14:52:36 [DEBUG] jieba: Prefix dict has been built successfully.
+2026-05-21 14:52:36 [INFO] src.retrieval.keyword_search: 关键词检索完成，返回 10 条结果
+2026-05-21 14:52:36 [INFO] src.retrieval.vector_search: 开始向量检索，query=我给盲人一把手枪告诉他这是吹风机这犯了什么法
+..., top_k=10
+2026-05-21 14:52:36 [INFO] src.knowledge_base.embedding: 正在加载嵌入模型: BAAI/bge-small-zh-v1.5
+2026-05-21 14:52:36 [INFO] sentence_transformers.SentenceTransformer: Use pytorch device_name: cpu
+2026-05-21 14:52:36 [INFO] sentence_transformers.SentenceTransformer: Load pretrained SentenceTransformer: BAAI/bge-small-zh-v1.5
+2026-05-21 14:52:37 [INFO] src.knowledge_base.embedding: 嵌入模型加载完成
+2026-05-21 14:52:37 [INFO] src.retrieval.vector_search: 向量检索完成，返回 10 条结果
+2026-05-21 14:52:37 [INFO] src.retrieval.hybrid_search: 开始RRF混合检索融合，query=我给盲人一把手枪告诉他这是吹风机这犯了什么法
+...
+2026-05-21 14:52:37 [INFO] src.retrieval.hybrid_search: RRF融合完成，最终返回 3 条结果
+2026-05-21 14:52:37 [INFO] src.generation.ollama_model: 正在调用 Ollama (llama3.2:latest)...
+2026-05-21 14:52:47 [INFO] src.generation.ollama_model: Ollama 调用成功
+2026-05-21 14:52:47 [INFO] src.pipeline.rag_pipeline: RAG问答完成，answer=根据现有资料无法确定。文档中没有相关规定关于盲人使用手枪的法规或监管。...
+2026-05-21 14:52:47 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
+2026-05-21 14:52:47 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base
+2026-05-21 14:53:01 [INFO] src.generation.api_model: DeepSeek API 已配置，模型: deepseek-chat
+2026-05-21 14:53:17 [INFO] src.pipeline.rag_pipeline: RAG问答开始，query=我给盲人一把手枪告诉他这是吹风机这犯了什么法...
+2026-05-21 14:53:17 [INFO] src.retrieval.keyword_search: 开始关键词检索，query=我给盲人一把手枪告诉他这是吹风机这犯了什么法..., top_k=10
+2026-05-21 14:53:17 [INFO] src.retrieval.keyword_search: 关键词检索完成，返回 10 条结果
+2026-05-21 14:53:17 [INFO] src.retrieval.vector_search: 开始向量检索，query=我给盲人一把手枪告诉他这是吹风机这犯了什么法..., top_k=10
+2026-05-21 14:53:17 [INFO] src.retrieval.vector_search: 向量检索完成，返回 10 条结果
+2026-05-21 14:53:17 [INFO] src.retrieval.hybrid_search: 开始RRF混合检索融合，query=我给盲人一把手枪告诉他这是吹风机这犯了什么法...
+2026-05-21 14:53:17 [INFO] src.retrieval.hybrid_search: RRF融合完成，最终返回 3 条结果
+2026-05-21 14:53:17 [INFO] src.generation.api_model: 正在调用 DeepSeek API...
+2026-05-21 14:53:20 [INFO] src.generation.api_model: DeepSeek API 调用成功
+2026-05-21 14:53:20 [INFO] src.pipeline.rag_pipeline: RAG问答完成，answer=根据现有资料无法确定。参考资料中仅涉及劳动合同法相关内容，未包含关于枪支管理、欺诈或伤害他人等行为的法律规定。...
+2026-05-21 14:53:20 [INFO] src.knowledge_base.load_kb: 成功加载分块元数据，共 31 条
+2026-05-21 14:53:20 [INFO] src.knowledge_base.load_kb: 成功加载向量库: domain_knowledge_base
